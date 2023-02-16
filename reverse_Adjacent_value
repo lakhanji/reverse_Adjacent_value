@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void reverse_Adjacent_value(int arr[],int n){
+    for (int i = 0; i < n-1; i++)
+    {
+        swap(arr[i],arr[i++]);
+        
+
+    }
+    
+}
+
+void print(int arr[],int n){
+    for (int i = 0; i < 9; i++)
+    {
+        cout<<arr[i]<<" ";
+   }
+    
+}
+
+int main(){
+
+    int arr[9]={1,2,4,5,3,4,5,7,6};
+    cout<<"array before reverse_Adjacent_value : "<<endl;
+    print(arr,9);
+    cout<<endl<<"array after reverse_Adjacent_value : "<<endl;
+    reverse_Adjacent_value(arr,9);
+    print(arr,9);
+ 
+return 0;
+}
